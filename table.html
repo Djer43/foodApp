@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="../Application repas/imgStyle.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="../Application repas/weekPlanning.js"></script>
+  <link rel="stylesheet" href="css/themes/foodAppTheme.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<style>
+th {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+tr:nth-child(even) {
+    background: #e9e9e9;
+}
+</style>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Menus de la semaine du 13.02.17</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+    <table data-role="table" class="ui-responsive ui-shadow" id="myTable">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Matin</th>
+          <th>Midi</th>
+          <th>Soir</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Lundi</b></td>
+          <td><div id="lundi_morning"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_lundi_morning" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="lundi_afternoon"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_lundi_afternoon" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="lundi_evening"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html"  id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_lundi_evening" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+         </tr>
+         <tr>
+          <td><b>Mardi</b></td>
+          <td><div id="mardi_morning"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_mardi_morning" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="mardi_afternoon"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_mardi_afternoon" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="mardi_evening"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_mardi_evening" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+         </tr>
+         <tr>
+          <td><b>Mercredi</b></td>
+          <td><div id="mercredi_morning"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_mercredi_morning" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="mercredi_afternoon"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_mercredi_afternoon" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="mercredi_evening"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_mercredi_evening" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+         </tr>
+	     <tr>
+          <td><b>Jeudi</b></td>
+          <td><div id="jeudi_morning"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_jeudi_morning" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="jeudi_afternoon"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_jeudi_afternoon" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="jeudi_evening"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html"  id="addMenu"class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_jeudi_evening" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+         </tr>
+		  <tr>
+          <td><b>Vendredi</b></td>
+          <td><div id="vendredi_morning"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_vendredi_morning" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="vendredi_afternoon"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_vendredi_afternoon" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="vendredi_evening"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_vendredi_evening" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+         </tr>
+		<tr>
+          <td><b>Samedi</b></td>
+          <td><div id="samedi_morning"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_samedi_morning" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="samedi_afternoon"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_samedi_afternoon" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="samedi_evening"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_samedi_evening" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+         </tr>
+		<tr>
+          <td><b>Dimanche</b></td>
+          <td><div id="dimanche_morning"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_dimanche_morning" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="dimanche_afternoon"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_dimanche_afternoon" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		    <td><div id="dimanche_evening"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="addMenu" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btn_dimanche_evening" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/table.html' id="deleteMenu" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+         </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div data-role="footer">
+    <h1>©BlueBayCorp</h1>
+  </div>
+</div> 
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<script type="text/javascript" src="weekPlanning.js"></script>
+</body>
+</html>

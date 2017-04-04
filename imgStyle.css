@@ -1,0 +1,5 @@
+.ui-icon-myicon:after {
+    background-image: url("../Application repas/img/001-food.png");
+    /* Make your icon fit */
+    background-size: 18px 18px;
+}

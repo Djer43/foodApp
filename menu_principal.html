@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="css/themes/foodAppTheme.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<style>
+th {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+tr:nth-child(even) {
+    background: #e9e9e9;
+}
+</style>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Menus du jour</h1>
+  </div>
+ <div data-role="controlgroup" data-type="horizontal" data-mini="true" align="center">
+  <a href="../Application repas/table.html" data-role="button" data-icon="eye" >Planning hebdomadaire</a>
+  <a href="../Application repas/menu_principal.html" data-role="button" data-icon="grid">Nouveau planning</a>
+  </div>
+  <div data-role="main" class="ui-content">
+    <table data-role="table" class="ui-responsive ui-shadow" id="tabDay">
+	  <thead>
+	  <tr>
+	  </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b><font color="#507687">Matin</font></b></td>
+          <td><div id="morning_menu"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btnMorning" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editMorning" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/menu_principal.html' id="deleteMorning" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+		</tr>
+        <tr>
+          <td><b><font color="#507687">Midi</font></b></td>
+          <td><div id="afternoon_menu"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		<div id="btnAfternoon" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editAfternoon" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/menu_principal.html' id="deleteAfternoon" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		</td>
+		</tr>		
+        <tr>
+          <td><b><font color="#507687">Soir</font></b></td>
+          <td>
+		  <div id="evening_menu"><div class='ui-nodisc-icon ui-alt-icon'><a href="../Application repas/creation_menu.html" id="plush" class="ui-btn ui-corner-all ui-icon-plus ui-btn-icon-notext">Plus Icon</a></div></div>
+		  <div id="btnEvening" class='ui-nodisc-icon ui-alt-icon'><a href='../Application repas/creation_menu.html' id="editEvening" class='ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline'>Edit</a><a href='../Application repas/menu_principal.html' id="deleteEvening" class='ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline'>Delete</a></div>
+		  </td>
+	   </tr>
+      </tbody>
+    </table>
+  </div>
+  <div data-role="footer">
+    <h1>©BlueBayCorp</h1>
+  </div>
+</div> 
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
